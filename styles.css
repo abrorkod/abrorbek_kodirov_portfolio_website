@@ -351,10 +351,9 @@ footer a:hover{
         margin-top: 50px;
     }
 
-    figcaption {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+    .figure figcaption {
+        text-align:center;
+        justify-self: center;
     }
 
     .hero img {
