@@ -200,14 +200,15 @@ main p {
 
 figure, figcaption {
     text-align: center;
-    
-    margin: 0 auto;
+    max-width: 300px;
+    margin: 0;
   }
   
-  figcaption {
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    margin-top: 10px;
+figcaption {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: bolder;
   }
 
 .figure a{
@@ -355,8 +356,13 @@ footer a:hover{
 
     figure, figcaption {
         text-align: center;
-        margin: 0 auto;
+        margin-top: 10%;
+        max-width: 250px;
       }
+
+    figcaption { 
+        margin-top: 20px;
+    }
 
     .hero img {
         width: 350px;
