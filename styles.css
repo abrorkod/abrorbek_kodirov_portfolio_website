@@ -198,15 +198,17 @@ main p {
     border-radius: 25px;
 }
 
-.figure figcaption { 
-    font-weight: 500;
-    margin-top: 24px; 
-    font-size: 14px; 
-    text-align:center;
-    justify-self: center;
-    color: #000000;
-    width: 180px;
-}
+figure, figcaption {
+    text-align: center;
+    
+    margin: 0 auto;
+  }
+  
+  figcaption {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+  }
 
 .figure a{
     text-decoration: underline;
@@ -351,10 +353,10 @@ footer a:hover{
         margin-top: 50px;
     }
 
-    .figure figcaption {
-        text-align:center;
-        justify-self: center;
-    }
+    figure, figcaption {
+        text-align: center;
+        margin: 0 auto;
+      }
 
     .hero img {
         width: 350px;
