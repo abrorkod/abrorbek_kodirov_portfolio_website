@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A|K About</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="This page is about Abrorbek Kodirov's life, info and background">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="about">
+        <header> <a href="#">A <span style="font-weight: lighter;">|</span> K </a></header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" title="home"> Home </a></li>
+                <li><a href="about.html" title="about"> About </a></li>
+                <li><a href="images/Resume_AK (1) (1).pdf" title="about us" target="_blank"> Resume </a></li>
+                <li><a href="contact.html" title="contact"> Contact </a></li>
+            </ul>
+        </nav>
+
+        <div class="hero"> <img src="images/IMG_3633.JPG" alt="Abrorbek Kodirov"> </div>
+
+        <!-- main section -->
+        <main>
+            <h2>
+                <span id="greeting" style="font-weight: lighter;"></span>
+                <span id="datetime" style="font-family: 'Roboto Mono', monospace; font-size: 18px; margin-left: 10px; font-weight: lighter;" ></span>
+              </h2>
+            <p>
+                My name is Abrorbek, and I am currently studying in college, majoring in Computer Science. After
+                finishing high school, I decided to take a gap year to explore myself. During that year, I had the
+                opportunity to meet many successful people, find remote work, and eventually move to the United States.
+                After arriving in Illinois, I decided to apply to college and continue my educational journey toward
+                earning a Bachelor's degree. I am currently working part-time as an E-commerce Associate Specialist at
+                one of the largest online retail stores.</p>
+            <p style="font-family: 'Roboto Mono', monospace; color: rgb(29, 152, 193);">Programming skills: HTML, CSS, Javascript, Jquery, Python
+            </p>
+
+        </main>
+
+        <!-- footer section -->
+        <footer style="margin-top: 5%;">
+            Copyright &#169; 2025 | by Abrorbek | All rights reserved. |
+            <a href="https://www.instagram.com/abriikk/" target="_blank">
+                <i class="fa fa-instagram" style="font-size:16px;color: rgb(29, 152, 193);"></i> Instagram</a> |
+            <a href="https://www.linkedin.com/in/abrorbek-kodirov-2b11702ab/" target="_blank">
+                <i class="fa fa-linkedin-square" style="font-size:16px;color: rgb(29, 152, 193);"></i> Linkedin</a> |
+            <a href="mailto:abror.book@gmail.com">
+                <i class="fa fa-envelope" style="font-size:16px;color: rgb(29, 152, 193);"></i> Email</a>
+        </footer>
+
+    </div>
+
+    <script>
+        function updateGreetingAndTime() {
+          const greetingEl = document.getElementById('greeting');
+          const datetimeEl = document.getElementById('datetime');
+      
+          const now = new Date();
+          const hour = now.getHours();
+      
+          let greeting = "";
+          if (hour >= 5 && hour < 12) {
+            greeting = "Good morning";
+          } else if (hour >= 12 && hour < 17) {
+            greeting = "Good afternoon";
+          } else {
+            greeting = "Good Evening";
+          }
+      
+          // Format date & time
+          const options = { year: 'numeric', month: 'short', day: 'numeric' };
+          const timeString = now.toLocaleTimeString();
+          const dateString = now.toLocaleDateString(undefined, options);
+      
+          greetingEl.textContent = greeting + "!";
+          datetimeEl.textContent = `${dateString}, ${timeString}`;
+        }
+      
+        updateGreetingAndTime();
+        setInterval(updateGreetingAndTime, 1000);
+      </script>
+
+</body>
+
+</html>
