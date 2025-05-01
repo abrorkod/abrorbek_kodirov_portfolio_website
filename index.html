@@ -22,12 +22,17 @@
 		<header> <a href="index.html">A <span style="font-weight: lighter;">|</span> K </a></header>
 
 		<nav>
-			<ul>
-				<li><a href="index.html" title="home"> Home </a></li>
-				<li><a href="about.html" title="about"> About </a></li>
-				<li><a href="images/Resume_AK (1) (1).pdf" title="about us" target="_blank"> Resume </a></li>
-				<li><a href="contact.html" title="contact"> Contact </a></li>
-			</ul>
+			<button class="menu-toggle" aria-label="Toggle navigation">
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="nav-links">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="images/Resume_AK (1) (1).pdf" target="_blank">Resume</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
 		</nav>
 
 		<!-- hero image section -->
@@ -74,8 +79,8 @@
 				support
 				day-to-day ecommerce platform operations and resolve process challenges.
 				<br>
-				<span style="color: #1295c9; font-weight: bold;">|</span> Utilized digital platforms like ChannelAdvisor
-				(Rithum) and Amazon FBA to streamline data management and tracking.
+				<span style="color: #1295c9; font-weight: bold;">|</span> Proficient in platforms such as ChannelAdvisor
+				(Rithum), Amazon Seller Central, eBay, Walmart Marketplace, and StockX.
 			</p>
 		</div>
 
@@ -113,12 +118,14 @@
 			<figure class="figure">
 				<img src="images/IMG_3632.JPG" alt="Image" width="500px" height="590px">
 
-				<figcaption> High School Graduation 2022 (<a href="https://aluwed.uz/en" target="_blank">Academic lyceum of University of World Economy and Diplomacy</a>)</figcaption>
+				<figcaption> High School Graduation 2022 (<a href="https://aluwed.uz/en" target="_blank">Academic lyceum
+						of University of World Economy and Diplomacy</a>)</figcaption>
 			</figure>
 
 			<figure class="figure">
 				<img src="images/IMG_3643.JPG" alt="Image">
-				<figcaption> Continuing my education towards Bachelor's degree in the southwest suburbs of Chicago, IL since 2024</figcaption>
+				<figcaption> Continuing my education towards Bachelor's degree in the southwest suburbs of Chicago, IL
+					since 2024</figcaption>
 			</figure>
 
 		</div>
@@ -135,6 +142,15 @@
 		</footer>
 
 	</div>
+
+	<script>
+		const toggleBtn = document.querySelector('.menu-toggle');
+		const navLinks = document.querySelector('.nav-links');
+		toggleBtn.addEventListener('click', () => {
+			navLinks.classList.toggle('active');
+		});
+	</script>
+
 </body>
 
 </html>
