@@ -5,79 +5,87 @@ body {
 
 /*container grid layout */
 
-.container, .about, .contact {
+.container,
+.about,
+.contact {
     display: grid;
     grid-template-columns: 3fr 3fr;
     grid-template-rows: auto auto auto auto auto 1fr;
-    grid-template-areas: 
-    "header nav" /* first row: header/nav side by side */
-    "main hero" /* second row: hero spans both columns */
-    "content1 content1"
-    "content2 content2"
-    "photos photos" /* fourth row: spans both */
-    "footer footer"; /*spans both*/
+    grid-template-areas:
+        "header nav"
+        /* first row: header/nav side by side */
+        "main hero"
+        /* second row: hero spans both columns */
+        "content1 content1"
+        "content2 content2"
+        "photos photos"
+        /* fourth row: spans both */
+        "footer footer";
+    /*spans both*/
     gap: 0px;
-    padding: 0px; /*space around container */
-    
+    padding: 0px;
+    /*space around container */
+
 }
 
 header {
-    grid-area:header; 
+    grid-area: header;
     background: #000000;
     font-weight: bold;
-    color:white; 
+    color: white;
     text-align: left;
     font-size: 20px;
     padding: 25px 25px 25px 100px;
-     
+
 }
 
-header a{
+header a {
     text-decoration: none;
     color: white;
 }
 
-header, nav {
+header,
+nav {
     position: sticky;
     top: 0px;
 }
 
 nav {
     grid-area: nav;
-    background: #000000; 
-    color: white; 
+    background: #000000;
+    color: white;
     text-align: center;
-    padding:25px 100px 25px 25px;
+    padding: 25px 100px 25px 25px;
 }
 
 nav ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin: 0;
-    display:flex;
-    justify-content: right; 
+    display: flex;
+    justify-content: right;
     gap: 55px;
 }
 
 nav ul li a {
-    color:white;
+    color: white;
     text-decoration: none;
-    padding:10px;
-    background: #000000; 
-    border-radius:8px; 
+    padding: 10px;
+    background: #000000;
+    border-radius: 8px;
     transition: 0.25s ease;
 
 }
 
 
 nav ul li a:hover {
-    color:black;
-    background-color: #ffffff; 
+    color: black;
+    background-color: #ffffff;
     padding: 12px;
     transition: 0.25s ease;
 }
 
-/*hero image*/ 
+/*hero image*/
 .hero {
     grid-area: hero;
     margin-top: 8%;
@@ -85,13 +93,14 @@ nav ul li a:hover {
     margin-right: 30%;
     align-content: center;
 }
+
 .hero img {
-   width: 350px;
-   height: 350px;
-   background: radial-gradient(closest-side,#ffffff, #a6e5ff, #ffffff);    
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(closest-side, #ffffff, #a6e5ff, #ffffff);
 }
 
-/*hero image*/ 
+/*hero image*/
 .about .hero {
     grid-area: hero;
     margin-top: 8%;
@@ -99,18 +108,19 @@ nav ul li a:hover {
     margin-right: 30%;
     align-content: center;
 }
+
 .about .hero img {
-   width: 265px;
-   height: 300px;
-   border-radius: 40px;
+    width: 265px;
+    height: 300px;
+    border-radius: 40px;
 }
 
 
-main {  
+main {
     grid-area: main;
-    background:#ffffff; 
+    background: #ffffff;
     padding: 50px;
-    font-size:20px; 
+    font-size: 20px;
     margin-left: 30%;
     margin-top: 10%;
     margin-right: -20%;
@@ -123,7 +133,7 @@ main p {
 
 .content1 {
     grid-area: content1;
-    background:#ffffff; 
+    background: #ffffff;
     font-size: 18px;
     padding: 50px;
     margin-left: 15%;
@@ -131,7 +141,7 @@ main p {
     margin-top: 5%;
 }
 
-.content1 a{
+.content1 a {
     text-decoration: underline;
     color: #000000;
     transition: all 0.3s ease;
@@ -146,7 +156,7 @@ main p {
 
 .content2 {
     grid-area: content2;
-    background:#ffffff; 
+    background: #ffffff;
     font-size: 18px;
     padding: 50px;
     margin-left: 15%;
@@ -155,7 +165,7 @@ main p {
     margin-bottom: 5%;
 }
 
-.content2 a{
+.content2 a {
     text-decoration: underline;
     color: #000000;
     transition: all 0.3s ease;
@@ -168,60 +178,62 @@ main p {
     font-size: larger;
 }
 
-.content1 a, .content2 a {
+.content1 a,
+.content2 a {
     display: inline-block;
-  }
+}
 
 .photos {
-    grid-area: photos; 
-    display:flex; 
-    justify-content:space-evenly;
-    padding:20px; 
-    background:#ffffff; 
+    grid-area: photos;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background: #ffffff;
 }
 
 .figure {
     box-shadow: 5px 0px 30px rgb(96, 194, 255);
-    text-align:center;
-    background:#ffffff; 
-    padding:30px; 
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
     border: 1px solid #1295c9;
     border-radius: 25px;
     margin-bottom: 7%;
 }
 
 .figure img {
-    width: 300px; 
+    width: 300px;
     height: 345px;
-    display:block; 
-    margin:0 auto;
+    display: block;
+    margin: 0 auto;
     border-radius: 25px;
 }
 
-figure, figcaption {
+figure,
+figcaption {
     text-align: center;
     max-width: 300px;
     margin: 0;
-  }
-  
+}
+
 figcaption {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     margin-top: 20px;
     font-weight: bolder;
-  }
+}
 
-.figure a{
+.figure a {
     text-decoration: underline;
     color: #000000;
 }
 
 footer {
     grid-area: footer;
-    background: #000000; 
-    text-align:center; 
+    background: #000000;
+    text-align: center;
     color: rgb(255, 255, 255);
-    padding:20px; 
+    padding: 20px;
     text-decoration: none;
 }
 
@@ -232,22 +244,22 @@ footer a {
 
 }
 
-footer a:hover{
-    color:rgb(0, 0, 0);
-    background-color: #fcfcfc; 
+footer a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #fcfcfc;
     text-decoration: none;
     padding: 5px;
-    border-radius:8px; 
+    border-radius: 8px;
     transition: 0.25s ease;
 }
 
 .about footer {
     font-size: 100%;
     grid-area: footer;
-    background: #ffffff; 
-    text-align:center; 
+    background: #ffffff;
+    text-align: center;
     color: rgb(0, 0, 0);
-    padding:20px; 
+    padding: 20px;
     text-decoration: none;
 }
 
@@ -258,71 +270,97 @@ footer a:hover{
 
 }
 
-.about footer a:hover{
-    color:rgb(255, 255, 255);
-    background-color: #000000; 
+.about footer a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
     text-decoration: none;
     padding: 5px;
-    border-radius:8px; 
+    border-radius: 8px;
     transition: 0.25s ease;
 }
 
-/* Responsive Design for Mobile */ 
+/* Mobile Navigation */
 
-    @media (max-width: 980px) {
-      .container, .about, .contact {
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: block;
+}
+
+/* Responsive Design for Mobile and Tablet */
+
+@media (max-width: 980px) {
+
+    .container,
+    .about,
+    .contact {
         display: grid;
-        grid-template-columns: 1fr; /* switch to single column */
+        grid-template-columns: 1fr;
+        /* switch to single column */
         grid-template-areas:
-          "header"
-          "nav"
-          "hero"
-          "main"
-          "content1"
-          "content2"
-          "photos"
-          "footer";
-      }
+            "header"
+            "nav"
+            "hero"
+            "main"
+            "content1"
+            "content2"
+            "photos"
+            "footer";
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        text-align: center;
+        padding: 20px;
+    }
 
     nav {
-        padding: 20px;
-        position: initial;
+        position: sticky;
+        top: 67px;
+        z-index: 999;
+        padding: 0px;
         margin: 0;
-      }
-    
-    nav ul {
-        flex-direction: column;
-        align-items:center;
-        gap:30px; 
-    }
-    
-    nav ul li a{
-        margin: 0;
-        background: none;
-        
+        background-color: #000000;
     }
 
-    nav ul li a:hover{
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    nav ul li a {
+        margin: 0;
+        background: none;
+
+    }
+
+    nav ul li a:hover {
         background: none;
         color: white;
         padding: 0px;
     }
-    
-    .photos {
-        flex-direction:column; 
-        align-items:center; 
-    }
 
-    header {
-        text-align: center;
-        padding: 20px;
+    .photos {
+        flex-direction: column;
+        align-items: center;
     }
 
     footer {
         font-size: small;
     }
 
-    footer a:hover{
+    footer a:hover {
         background: none;
         color: white;
         padding: 0px;
@@ -331,12 +369,13 @@ footer a:hover{
     header {
         position: sticky;
         top: 0;
-        
+
     }
 
     .content1 {
         margin: auto;
     }
+
     .content2 {
         margin: auto;
     }
@@ -354,13 +393,14 @@ footer a:hover{
         margin-top: 50px;
     }
 
-    figure, figcaption {
+    figure,
+    figcaption {
         text-align: center;
         margin-top: 10%;
         max-width: 250px;
-      }
+    }
 
-    figcaption { 
+    figcaption {
         margin-top: 20px;
     }
 
@@ -370,14 +410,34 @@ footer a:hover{
     }
 
     .figure img {
-        width: 250px; 
+        width: 250px;
         height: 295px;
     }
-    .about .hero{
+
+    .about .hero {
         align-items: center;
         margin: 0 auto 0px;
         margin-top: 50px;
     }
 
-}
+    .menu-toggle {
+        display: block;
+        margin: auto;
+        padding: 10px;
+    }
 
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+
+
+}
