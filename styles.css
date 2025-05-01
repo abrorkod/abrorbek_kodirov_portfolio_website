@@ -325,9 +325,9 @@ footer a:hover {
 
     nav {
         position: sticky;
-        top: 67px;
+        top: 65px;
         z-index: 999;
-        padding: 5px;
+        padding: 2px;
         margin: 0;
         background-color: #000000;
     }
