@@ -16,6 +16,7 @@ body {
         /* first row: header/nav side by side */
         "main hero"
         /* second row: hero spans both columns */
+        "content0 content0"
         "content1 content1"
         "content2 content2"
         "photos photos"
@@ -131,6 +132,29 @@ main p {
     font-weight: 350;
 }
 
+.content0 {
+    grid-area: content0;
+    background: #ffffff;
+    font-size: 18px;
+    padding: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+.content0 a {
+    text-decoration: underline;
+    color: #000000;
+    transition: all 0.3s ease;
+
+}
+
+.content0 a:hover {
+    color: #1295c9;
+    transition: all 0.3s ease;
+    font-size: larger;
+}
+
 .content1 {
     grid-area: content1;
     background: #ffffff;
@@ -138,7 +162,7 @@ main p {
     padding: 50px;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 5%;
+    margin-top: 0%;
 }
 
 .content1 a {
@@ -178,6 +202,7 @@ main p {
     font-size: larger;
 }
 
+.content0 a,
 .content1 a,
 .content2 a {
     display: inline-block;
@@ -309,6 +334,7 @@ footer a:hover {
             "nav"
             "hero"
             "main"
+            "content0"
             "content1"
             "content2"
             "photos"
@@ -372,6 +398,10 @@ footer a:hover {
 
     }
 
+    .content0 {
+        margin: auto;
+    }
+
     .content1 {
         margin: auto;
     }
@@ -405,8 +435,8 @@ footer a:hover {
     }
 
     .hero img {
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
     }
 
     .figure img {
