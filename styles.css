@@ -33,7 +33,7 @@ body {
 
 header {
     grid-area: header;
-    background: linear-gradient(to bottom, #999999, #e9e9e9, #ffffff);
+    background: #ffffff;
     font-weight: bold;
     color: white;
     text-align: left;
@@ -457,4 +457,5 @@ footer a:hover {
 
 
 }
+
 
