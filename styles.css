@@ -55,7 +55,7 @@ nav {
 
 nav {
     grid-area: nav;
-    background: linear-gradient(to bottom, #999999, #e9e9e9, #ffffff);
+    background: #ffffff;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 25px 100px 25px 25px;
@@ -100,7 +100,7 @@ nav ul li a:hover {
 .hero img {
     width: 350px;
     height: 350px;
-    background: radial-gradient(closest-side, #ffffff, #f1f1f1, #ffffff);
+    background: #ffffff;
 }
 
 /*hero image*/
@@ -457,3 +457,4 @@ footer a:hover {
 
 
 }
+
